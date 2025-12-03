@@ -1,7 +1,6 @@
-# AI-Playwright-POC
 # Author: Shreeharsha M N
 
-A proof-of-concept Node.js/TypeScript project for building and running agents using Open AI and Lang Chain
+Node.js/TypeScript project for building and running agents using Open AI and Lang Chain
 
 ## Project Details
 1. # Automated Playwright Test Code Generation from Gherkin Features
@@ -22,7 +21,7 @@ Environment variables are used for secure LLM API configuration.
 The system is extensible: you can add more feature files, change the prompt, or swap out the LLM with minimal code changes.
 
 # In a nutshell:
-Project POC uses LangChain’s agentic AI to automate the translation of Gherkin feature steps into Playwright test code, orchestrated through a modular, prompt-driven pipeline, and outputs the results as ready-to-use TypeScript test files.
+It uses LangChain’s agentic AI to automate the translation of Gherkin feature steps into Playwright test code, orchestrated through a modular, prompt-driven pipeline, and outputs the results as ready-to-use TypeScript test files.
 
 ## Getting Started
 
