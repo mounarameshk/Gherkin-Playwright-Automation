@@ -1,0 +1,170 @@
+{
+  "pageElements": {
+    "inputs": [
+      {
+        "index": 0,
+        "id": "email",
+        "name": "email",
+        "type": "text",
+        "placeholder": "e.g. you@website.com",
+        "className": "Box-sc-8w9j0a-0 Input__StyledBaseInput-sc-1lqa10a-0 qMmBT fYhdMD",
+        "data-test-id": null,
+        "aria-label": null,
+        "value": "",
+        "selectors": {
+          "byId": "#email",
+          "byName": "[name=\"email\"]",
+          "byType": "[type=\"text\"]",
+          "byPlaceholder": "[placeholder=\"e.g. you@website.com\"]",
+          "byDataTestId": null
+        }
+      },
+      {
+        "index": 1,
+        "id": "password",
+        "name": "password",
+        "type": "password",
+        "placeholder": "Your Password",
+        "className": "Box-sc-8w9j0a-0 Input__StyledBaseInput-sc-1lqa10a-0 fphaCO fYhdMD",
+        "data-test-id": null,
+        "aria-label": null,
+        "value": "",
+        "selectors": {
+          "byId": "#password",
+          "byName": "[name=\"password\"]",
+          "byType": "[type=\"password\"]",
+          "byPlaceholder": "[placeholder=\"Your Password\"]",
+          "byDataTestId": null
+        }
+      }
+    ],
+    "buttons": [
+      {
+        "index": 0,
+        "id": "",
+        "type": "button",
+        "textContent": "",
+        "className": "Box-sc-8w9j0a-0 juGsGU",
+        "data-test-id": "button",
+        "isEmailButton": false,
+        "isSSOButton": false,
+        "selectors": {
+          "byId": null,
+          "byText": null,
+          "byDataTestId": "[data-test-id=\"button\"]",
+          "byType": "[type=\"button\"]"
+        }
+      },
+      {
+        "index": 1,
+        "id": "",
+        "type": "submit",
+        "textContent": "Sign In",
+        "className": "Box-sc-8w9j0a-0 dKqUbb",
+        "data-test-id": "button",
+        "isEmailButton": false,
+        "isSSOButton": false,
+        "selectors": {
+          "byId": null,
+          "byText": "button:has-text(\"Sign In\")",
+          "byDataTestId": "[data-test-id=\"button\"]",
+          "byType": "[type=\"submit\"]"
+        }
+      }
+    ],
+    "headers": [
+      {
+        "index": 0,
+        "tagName": "h1",
+        "text": "Sign in to your account",
+        "id": "signin-heading",
+        "className": "Box-sc-8w9j0a-0 Text__StyledText-sc-s2v5py-0 dHgwOZ hgyLeM",
+        "selector": "h1:has-text(\"Sign in to your account\")"
+      }
+    ],
+    "links": [
+      {
+        "text": "Sign up",
+        "href": "https://stardust.integration.endpointclosing.com/endpoint/consumer-app/sign-up",
+        "id": ""
+      },
+      {
+        "text": "Forgot email or password?",
+        "href": "https://stardust.integration.endpointclosing.com/endpoint/consumer-app/sign-in/forgot-credentials",
+        "id": ""
+      },
+      {
+        "text": "Privacy & Terms",
+        "href": "https://www.endpoint.com/privacy",
+        "id": ""
+      },
+      {
+        "text": "FAQ",
+        "href": "https://help.endpoint.com/en",
+        "id": ""
+      }
+    ],
+    "pageInfo": {
+      "title": "Endpoint",
+      "url": "https://stardust.integration.endpointclosing.com/endpoint/consumer-app/sign-in",
+      "bodyText": "Sign in to your accountDon't have an account? Sign upEmail AddressPasswordForgot email or password?Sign In© 2025 EndpointPrivacy & TermsFAQ(self.__next_f=self.__next_f||[]).push([0])self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[50692,[\\\"5579\\\",\\\"static/chunks/13633bf0-9992a0892d569817.js\\\",\\\"2545\\\",\\\"static/chunks/c16f53c3-23315cef868c27cc.js\\\",\\\"5240\\\",\\\"static/chunks/5240-52420d76c96967aa.js\\\",\\\"8094\\\",\\\"static/chunks/8094-ea1dfe98c9fa7b8d.js\\\",\\\"6642\\\",\\\"static/chunks/6642-40b840a88e075b"
+    }
+  },
+  "recommendations": {
+    "url": "https://stardust.integration.endpointclosing.com/endpoint/consumer-app/sign-in",
+    "pageTitle": "Endpoint",
+    "emailField": {
+      "index": 0,
+      "id": "email",
+      "name": "email",
+      "type": "text",
+      "placeholder": "e.g. you@website.com",
+      "className": "Box-sc-8w9j0a-0 Input__StyledBaseInput-sc-1lqa10a-0 qMmBT fYhdMD",
+      "data-test-id": null,
+      "aria-label": null,
+      "value": "",
+      "selectors": {
+        "byId": "#email",
+        "byName": "[name=\"email\"]",
+        "byType": "[type=\"text\"]",
+        "byPlaceholder": "[placeholder=\"e.g. you@website.com\"]",
+        "byDataTestId": null
+      }
+    },
+    "passwordField": {
+      "index": 1,
+      "id": "password",
+      "name": "password",
+      "type": "password",
+      "placeholder": "Your Password",
+      "className": "Box-sc-8w9j0a-0 Input__StyledBaseInput-sc-1lqa10a-0 fphaCO fYhdMD",
+      "data-test-id": null,
+      "aria-label": null,
+      "value": "",
+      "selectors": {
+        "byId": "#password",
+        "byName": "[name=\"password\"]",
+        "byType": "[type=\"password\"]",
+        "byPlaceholder": "[placeholder=\"Your Password\"]",
+        "byDataTestId": null
+      }
+    },
+    "submitButton": {
+      "index": 1,
+      "id": "",
+      "type": "submit",
+      "textContent": "Sign In",
+      "className": "Box-sc-8w9j0a-0 dKqUbb",
+      "data-test-id": "button",
+      "isEmailButton": false,
+      "isSSOButton": false,
+      "selectors": {
+        "byId": null,
+        "byText": "button:has-text(\"Sign In\")",
+        "byDataTestId": "[data-test-id=\"button\"]",
+        "byType": "[type=\"submit\"]"
+      }
+    }
+  },
+  "timestamp": "2025-09-22T07:10:59.433Z"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "agent-playwright",
+  "version": "1.0.0",
+  "author": "Shreeharsha M N <sneelakantha@firstam.com>",
+  "main": "index.ts",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "@langchain/community": "^0.3.49",
+    "@langchain/textsplitters": "^0.1.0",
+    "gherkin": "^9.0.0",
+    "gherkin-parse": "^1.0.12",
+    "playwright": "^1.35.0"
+  },
+  "devDependencies": {
+    "@langchain/core": "^0.3.57",
+    "@langchain/langgraph": "^0.2.74",
+    "@langchain/mcp-adapters": "^0.5.2",
+    "@langchain/openai": "^0.5.18",
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.0",
+    "cross-env": "^10.1.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "dotenv": "^16.6.1",
+    "langchain": "^0.3.27",
+    "ts-node": "^10.9.2",
+    "tsx": "^3.12.7",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "start": "tsx src/scenario-agent.ts",
+    "playwright": "tsx src/playwright-agent.ts",
+    "generate": "tsx src/generate-from-feature.ts",
+    "generate:browser": "tsx src/generate-from-feature.ts browser",
+    "generate:standard": "tsx src/generate-from-feature.ts standard",
+    "scan:dom": "tsx src/real-dom-scanner.ts",
+    "scan:features": "cross-env HEADLESS=true tsx src/feature-scanner.ts",
+    "scan:features:visible": "HEADLESS=false tsx src/feature-scanner.ts",
+    "scan:features:debug": "tsx src/feature-scanner.ts",
+    "map:application": "tsx src/application-dom-mapper.ts",
+    "test:generated": "tsx src/prevent-networkidle.ts && cucumber-js --require-module tsx/esm --require src/support/world.ts --require src/support/hooks.ts --require AI-generated/auth/auth.ts src/features/auth.feature --format progress",
+    "test:generated-with-reports": "tsx -r dotenv/config src/prevent-networkidle.ts && node -r dotenv/config src/run-all-generated-tests.js",
+    "test:generated-debug": "cucumber-js --require-module tsx/esm --require src/support/world.ts --require src/support/hooks.ts --require AI-generated/auth/auth.ts src/features/auth.feature --format progress --fail-fast",
+    "test:dry-run": "cucumber-js --require-module tsx/esm --require src/support/world.ts --require src/support/hooks.ts --require AI-generated/auth/auth.ts src/features/auth.feature --dry-run",
+    "reports:open": "start reports/html/latest.html",
+    "reports:clean": "rmdir /s /q reports && mkdir reports\\html reports\\json reports\\screenshots reports\\artifacts"
+  }
+}
